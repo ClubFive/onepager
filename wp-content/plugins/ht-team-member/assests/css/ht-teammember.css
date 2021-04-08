@@ -1,0 +1,467 @@
+.team_area {
+  margin: 0 -15px;
+  overflow: hidden;
+}
+.single-team {
+    margin-top: 30px;
+}
+.single-team ul.social-network {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.single-team .team-thumb {
+    position: relative;
+    overflow: hidden;
+}
+.item-col{
+    padding: 0 15px;
+    float: left;
+    width: 25%;
+    
+}
+.single-team {
+  position: relative;
+}
+
+.single-team .content {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    border: 1px solid #dcd9d9;
+    padding: 30px 20px;
+}
+
+.single-team .content h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.single-team .content h4 a {
+    color: #343434;
+    transition: 0.5s;
+}
+
+.single-team .content h4 a:hover {
+    color: #18012c;
+}
+
+.single-team .content p {
+    margin: 0;
+    color: #343434;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.single-team .team-hover-action {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    top: -100px;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out 0.5s;
+    -moz-transition: all 0.3s ease-out 0.5s;
+    -o-transition: all 0.3s ease-out 0.5s;
+    -ms-transition: all 0.3s ease-out 0.5s;
+    transition: all 0.3s ease-out 0.5s;
+}
+
+.single-team .team-hover-action .team-hover {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.single-team .team-hover-action .team-hover p {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 0 23px;
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    transform: translateY(50px);
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -o-transition: all 0.2s ease-in-out 0.1s;
+    -ms-transition: all 0.2s ease-in-out 0.1s;
+    transition: all 0.2s ease-in-out 0.1s;
+    opacity: 0;
+}
+
+.single-team .team-hover-action .team-hover .social-network {
+    margin-bottom: 7px;
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -o-transition: all 0.2s ease-in-out 0.1s;
+    -ms-transition: all 0.2s ease-in-out 0.1s;
+    transition: all 0.2s ease-in-out 0.1s;
+    opacity: 0;
+}
+
+.single-team:hover .team-hover-action {
+    opacity: 1;
+    top: 0px;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-animation: bounceY 0.9s linear;
+    -moz-animation: bounceY 0.9s linear;
+    -ms-animation: bounceY 0.9s linear;
+    animation: bounceY 0.9s linear;
+    background-color: rgba(24, 1, 44, 0.6);
+}
+
+.single-team:hover .team-hover-action .team-hover p,
+.single-team:hover .team-hover-action .team-hover .social-network {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    -o-transition-delay: 0.4s;
+    -ms-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+    opacity: 1;
+}
+
+.single-team::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 1px;
+    background: #18012c;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.single-team:hover::before {
+    width: 100%;
+}
+
+.social-network {
+    margin-bottom: 8px;
+}
+
+.social-network li {
+    margin: 0 10px;
+}
+
+.social-network li a {
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    background: transparent;
+}
+
+.social-network li a:hover {
+    color: #3B5998;
+    background: transparent;
+}
+
+.team-bio {
+  margin: 5px 0;
+}
+
+.single-team .team-bio p{
+    margin: 0;
+}
+.single-team .team-designation{
+    margin-bottom: 5px;
+}
+.team_area.no_gutter {
+  margin: 0;
+}
+.no_gutter .item-col{
+    padding: 0;
+}
+.team-name{
+    margin: 0;
+}
+
+.team_style_2 .single-team:hover .team-hover-action .hover-action {
+  opacity: 1;
+  transform: translate(0px, -5px) rotate(0deg);
+}
+
+.team_style_2 .team-hover-action .hover-action{
+    background-color: rgba(115, 146, 184, 0.7);
+    opacity: 0;
+    text-align: center;
+    transform: translate(265px, 145px) rotate(45deg);
+    transition: all 0.5s ease-in-out 0s;
+    width: 100%;
+    bottom: 30px;
+    padding: 10px 30px;
+    position: absolute;
+}
+
+.team_style_2 .team-hover-action .hover-action h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.team_style_3 .team-click-action {
+  background: #343434 none repeat scroll 0 0;
+  border-radius: 50px 50px 0 0;
+  bottom: 0;
+  margin-bottom: -58px;
+  padding-bottom: 20px;
+  padding-top: 28px;
+  position: absolute;
+  text-align: center;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+}
+.team_style_3 .team-click-action.visible {
+  background: #18012c none repeat scroll 0 0;
+  margin-bottom: 0;
+}
+.team_style_3 .plus_click.team-minus::before {
+  background: #18012c none repeat scroll 0 0;
+  content: "";
+}
+.team_style_3 .single-team .team-hover-action {
+  opacity: 1;
+  top: auto;
+  bottom:0;
+}
+.plus_click {
+  left: 50%;
+  position: absolute;
+  top: -14px;
+  transform: translateX(-50%);
+}
+.plus_click::before {
+  background: #555555 none repeat scroll 0 0;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  color: #fff;
+  content: "";
+  cursor: pointer;
+  display: block;
+  font-family: Fontawesome;
+  font-size: 12px;
+  height: 25px;
+  line-height: 27px;
+  text-align: center;
+  transition: all 0.5s ease 0s;
+  width: 25px;
+  z-index: 2;
+}
+
+.team_style_4 .single-team .content{
+    border: 0;
+}
+
+.team_style_4 .team-info .social-network {
+  border-top: 2px solid #ffffff;
+  padding: 14px 0;
+}
+
+.team_style_4 .team-info {
+  background: #f4f4f4 none repeat scroll 0 0;
+  text-align: center;
+}
+
+.team_style_5 .single-team {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.team_style_5 .single-team .team-hover-action {
+  bottom: 30px;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  top: auto;
+  width: 100%;
+}
+.team_style_5 .item-col {
+  padding-bottom: 5px !important;
+}
+.team_style_5 .single-team .content {
+  border: 0 none;
+  padding: 20px 10px;
+}
+
+.team_style_5 .thumb {
+  position: relative;
+}
+.team_style_5 .social-network li a {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 100%;
+  color: #404040;
+  display: block;
+  font-size: 14px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  width: 28px;
+}
+.team_style_5 .social-network li a {
+  opacity: 0;
+  transform: scale(0.1);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+}
+.team_style_5 .single-team:hover .social-network li a {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: 0.1s;
+}
+
+.team_style_5 .single-team:hover .social-network li:nth-child(2) a{
+    transition-delay: 0.2s;
+}
+.team_style_5 .single-team:hover .social-network li:nth-child(3) a{
+    transition-delay: 0.3s;
+}
+.team_style_5 .single-team:hover .social-network li:nth-child(4) a{
+    transition-delay: 0.4s;
+}
+.team_style_5 .single-team:hover .social-network li:nth-child(5) a{
+    transition-delay: 0.5s;
+}
+
+.ht-carousel{
+    position: relative;
+}
+
+.ht-carousel .ht-arrow {
+  border-radius: 100%;
+  height: 30px;
+  left: 0;
+  line-height: inherit;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  z-index: 1;
+  transition: 0.4s;
+}
+.ht-carousel .ht-arrow.ht-next{
+    right: 0;
+    left: auto;
+}
+.ht-carousel .slick-dots li{
+  background: #000 none repeat scroll 0 0;
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  transition: 0.4s;
+  margin-bottom: 0 !important;
+}
+.ht-carousel .slick-dots li.slick-active{
+    background: red;
+}
+.ht-carousel .slick-dots li button::before{
+    display: none;
+}
+
+.htteammember-widgets .single-team{
+  margin-top: 0;
+}
+.htteammember-widgets .social-network li{
+  border:none !important;
+}
+
+/* Archive Page */
+.htteam_archive{
+  margin: 50px 0 80px;
+}
+.htteam_archive .team_area {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.htpost-pagination .nav-links > ul {
+    margin-left: -7px;
+    margin-right: -7px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.htpost-pagination .nav-links > ul > li{
+    display: inline-block;
+    padding: 0;
+    transition: all 0.3s ease 0s;
+}
+.htpost-pagination .nav-links > ul > li > a, .htpost-pagination .nav-links > ul > li > span{
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    color: #000;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 45px;
+    line-height: 45px;
+    margin: 7px;
+    padding: 0;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 45px;
+}
+
+.htpost-pagination .nav-links > ul > li > span.current, .htpost-pagination .nav-links > ul > li:hover a{
+    border-color: #f05b64;
+    color: #f05b64;
+}
+
+.htsocial-network{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.htsocial-network li{
+  display: inline-block;
+}
+.htsocial-network li a {
+  display: inline-block;
+  margin-right: 10px;
+}
+.htsocial-network li:last-child a{
+  margin-right: 0;
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+  .team_area .item-col{
+    width: 33.333% !important;
+  }
+
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+  
+  .team_area .item-col{
+    width: 100% !important;
+  }
+
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  
+  .team_area .item-col{
+    width: 50% !important;
+  }
+
+}
